@@ -51,16 +51,20 @@ if folder.count("zip")==0:
 for i in pictures:
     os.system(movcmd(i,"images"))
     time.sleep(5)
+    print("images moved")
 
 for i in videos:
     os.system(movcmd(i,"videos"))
     time.sleep(30)
+    print("videos moved")
 for i in Zip:
     os.system(movcmd(i,"zip"))
     time.sleep(15)
+    print("zip moved")
 for i in misc:
     os.system(movcmd(i,"misc"))
     time.sleep(90)
+    print("rest moved")
 
 
 
